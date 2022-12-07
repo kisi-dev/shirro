@@ -1,15 +1,121 @@
 <!DOCTYPE html>
-<html lang="id">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins&display=swap');
-    </style>
+    <title>Shirro</title>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
 <body>
-    <h1 style="font-size: 36px; color: #292d40; font-family: 'Poppins'; text-align: center; font-weight: 600; ">Halooo yang disana</h1>
+    <header>
+        <nav>
+            <div class="logo"><h2 class="h2">shirro</h2></div>
+            <div class="menu">
+                <a href="#skills">Home</a>
+                <a href="#commission">Commission</a>
+                <a href="#order">Order</a>
+            </div>
+            <div class="toggle">
+                <input type="checkbox" id="switch" />
+                <label for="switch" id="label">Toggle</label>
+            </div>
+        </nav>
+    </header>
+    <div class="gradient"></div>
+    <div class="main">
+        <div class="content">
+            <div class="intro">
+            <h1>Intro-<br>duction</h1>
+            <p>Hi Shirro's here!</p>
+            <p>My real name is Bagas, I am a beginners who have an interest in illustration, design, and web developing.</p>
+            <p>I am also enthusiast for an developing and creating some projects. I am happy and enjoy to see what can i grow and finished my project.</p>
+        </div>
+        <div class="article">
+            <article id="skills">
+                <a class="card" href="https://www.github.com/bgshirro">
+                    <h2>Front-End Web</h2>
+                    <img src="Assets/bx-arrow-back.svg">
+                </a>
+                <a class="card" href="https://www.pixiv.net/en/users/63285760">
+                    <h2>Illustrator</h2>
+                    <img src="Assets/bx-arrow-back.svg">
+                </a>
+                <a class="card" href="https://www.dribbble.com/Shirr0">
+                    <h2>Visual Designer</h2>
+                    <img src="Assets/bx-arrow-back.svg">
+                </a>
+            </article>
+            <article id="commission">
+                <div class="sub">
+                    <div class="title">
+                        <h2>Commission</h2>
+                        <p>Piease read terms and condition below before place an order</p>
+                    </div>
+                </div>
+                
+                <div class="accordion" data-aos="fade-up"
+                data-aos-anchor-placement="top-bottom"  >
+                        <input type="radio" name="accordion" id="cb1" / checked>
+                        <section class="box">
+                            <label class="box-title" for="cb1"><h3>General</h3> <img src="Assets/bx-chevron-up.svg" alt=""></label>
+                            <label class="box-close" for="acc-close"></label>
+                            <div class="box-content">
+                                <h4>
+                                    All illustration commissioned piece is for personal use only and prohibited to be used for commercial purpose.<br><br>
+                                    Sorry i don't accepting Gore, Mecha, Furry, Realistic, Ecchi and NSFW
+                                </h4>
+                            </div>
+                        </section>
+                        <input type="radio" name="accordion" id="cb2" />
+                        <section class="box">
+                            <label class="box-title" for="cb2"><h3>Additional Info</h3> <img src="Assets/bx-chevron-up.svg" alt=""></label>
+                            <label class="box-close" for="acc-close"></label>
+                            <div class="box-content">
+                                <h4>
+                                    Please provide an reverence first(include pose, expression, and other if you have)<br><br>
+                                    Free revision only during the sketching process, for the coloring process only 2 revision times.<br><br>
+                                    The result of illstration will be sent in JPG and PNG files with 4K at 350dpi resolution
+                                </h4>
+                            </div>
+                        </section>
+                        <input type="radio" name="accordion" id="cb3" />
+                        <section class="box">
+                            <label class="box-title" for="cb3"><h3>Workflow</h3> <img src="Assets/bx-chevron-up.svg" alt=""></label>
+                            <label class="box-close" for="acc-close"></label>
+                            <div class="box-content">
+                                <h4>
+                                    Process takes between 7 - 14 days according to the queue
+                                </h4>
+                            </div>
+                        </section>
+                        <input type="radio" name="accordion" id="cb4" />
+                        <section class="box">
+                            <label class="box-title" for="cb4"><h3>Payment</h3> <img src="Assets/bx-chevron-up.svg" alt=""></label>
+                            <label class="box-close" for="acc-close"></label>
+                            <div class="box-content">
+                                <h4>
+                                    Payment is made after the sketch is approved<br><br>
+                                    Paymet via PayPal or OVO/DANA (local)
+                                </h4>
+                            </div>
+                        </section>
+                        
+                        <input type="radio" name="accordion" id="acc-close" />
+                </div>
+            </article>
+            <article id="order">
+                <h2>Order and<br>More Information</h2><br><br><br>
+                <h2>Available Soon</h2>
+            </article>
+        </div>
+        </div>
+        
+    </div>
 </body>
+<script>
+    AOS.init();
+</script>
 </html>
