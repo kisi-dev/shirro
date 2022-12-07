@@ -321,6 +321,9 @@ input:checked + section.box .box-title:before {
     }
 }
 @media screen and (max-width: 700px) {
+	body{
+	margin: 0;
+	}
     .main{
         position: relative;
         display: flex;
@@ -346,7 +349,7 @@ input:checked + section.box .box-title:before {
         flex-direction: column;
         justify-content: flex-end;
         align-items: flex-start;
-        padding-bottom: 5vh;
+        padding-bottom: 10vh;
     }
     .intro p{
         width: auto;
