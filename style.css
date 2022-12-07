@@ -282,6 +282,9 @@ input:checked + section.box .box-title:before {
 	width: 44px;
 }
 @media screen and (min-width: 701px) {
+    body{
+        margin: 0 !important;
+    }
     .main {
         display: flex;
         align-items: center;
@@ -321,9 +324,9 @@ input:checked + section.box .box-title:before {
     }
 }
 @media screen and (max-width: 700px) {
-	body{
-	margin: 0;
-	}
+    body{
+        margin: 0 !important;
+    }
     .main{
         position: relative;
         display: flex;
