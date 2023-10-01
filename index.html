@@ -2,136 +2,115 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shirro</title>
-        <meta name="title" content="Shirro Visual" />
+    <!-- Primary Meta Tags -->
+    <title>Shirro Visual</title>
+    <meta name="title" content="Shirro Visual" />
     <meta name="description" content="Bagas Dwi's Art and Visual Design Portfolio" />
 
-    <!-- Open Graph / Facebook -->
+    <!-- Facebook -->
     <meta property="og:type" content="website" />
     <meta property="og:url" content="http://shirro.my.id/" />
     <meta property="og:title" content="Shirro Visual" />
     <meta property="og:description" content="Bagas Dwi's Art and Visual Design Portfolio" />
-    <meta property="og:image" content="Assets/header.webp" />
+    <meta property="og:image" content="Assets/thumb.webp" />
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image" />
     <meta property="twitter:url" content="http://shirro.my.id/" />
     <meta property="twitter:title" content="Shirro Visual" />
     <meta property="twitter:description" content="Bagas Dwi's Art and Visual Design Portfolio" />
-    <meta property="twitter:image" content="Assets/header.webp" />
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <link rel="stylesheet" href="style.css">
+    <meta property="twitter:image" content="Assets/thumb.webp" />
+
     <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="Assets/icon.webp">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="logo"><h2 class="h2">shirro</h2></div>
-            <div class="menu">
-                <a href="#skills">Home</a>
-                <a href="#commission">Commission</a>
-                <a href="#order">Order</a>
-            </div>
-            <div class="toggle">
-                <input type="checkbox" id="switch" />
-                <label for="switch" id="label">Toggle</label>
-            </div>
-        </nav>
-    </header>
-    <div class="gradient"></div>
-    <div class="main">
-        <div class="content">
-            <div class="intro">
-            <h1>Intro-<br>duction</h1>
-            <p>Hi Shirro's here!</p>
-            <p>My real name is Bagas, I am a beginners who have an interest in illustration, design, and web developing.</p>
-            <p>I am also enthusiast for an developing and creating some projects. I am happy and enjoy to see what can i grow and finished my project.</p>
-        </div>
-        <div class="article">
-            <article id="skills">
-                <a class="card" href="https://www.github.com/bgshirro">
-                    <h2>Front-End Web</h2>
-                    <img src="Assets/bx-arrow-back.svg">
-                </a>
-                <a class="card" href="https://www.pixiv.net/en/users/63285760">
-                    <h2>Illustrator</h2>
-                    <img src="Assets/bx-arrow-back.svg">
-                </a>
-                <a class="card" href="https://www.dribbble.com/Shirr0">
-                    <h2>Visual Designer</h2>
-                    <img src="Assets/bx-arrow-back.svg">
-                </a>
-            </article>
-            <article id="commission">
-                <div class="sub">
-                    <div class="title">
-                        <h2>Commission</h2>
-                        <p>Piease read terms and condition below before place an order</p>
-                    </div>
-                </div>
-                
-                <div class="accordion" data-aos="fade-up"
-                data-aos-anchor-placement="top-bottom"  >
-                        <input type="radio" name="accordion" id="cb1" / checked>
-                        <section class="box">
-                            <label class="box-title" for="cb1"><h3>General</h3> <img src="Assets/bx-chevron-up.svg" alt=""></label>
-                            <label class="box-close" for="acc-close"></label>
-                            <div class="box-content">
-                                <h4>
-                                    All illustration commissioned piece is for personal use only and prohibited to be used for commercial purpose.<br><br>
-                                    Sorry i don't accepting Gore, Mecha, Furry, Realistic, Ecchi and NSFW
-                                </h4>
-                            </div>
-                        </section>
-                        <input type="radio" name="accordion" id="cb2" />
-                        <section class="box">
-                            <label class="box-title" for="cb2"><h3>Additional Info</h3> <img src="Assets/bx-chevron-up.svg" alt=""></label>
-                            <label class="box-close" for="acc-close"></label>
-                            <div class="box-content">
-                                <h4>
-                                    Please provide an reverence first(include pose, expression, and other if you have)<br><br>
-                                    Free revision only during the sketching process, for the coloring process only 2 revision times.<br><br>
-                                    The result of illstration will be sent in JPG and PNG files with 4K at 350dpi resolution
-                                </h4>
-                            </div>
-                        </section>
-                        <input type="radio" name="accordion" id="cb3" />
-                        <section class="box">
-                            <label class="box-title" for="cb3"><h3>Workflow</h3> <img src="Assets/bx-chevron-up.svg" alt=""></label>
-                            <label class="box-close" for="acc-close"></label>
-                            <div class="box-content">
-                                <h4>
-                                    Process takes between 7 - 14 days according to the queue
-                                </h4>
-                            </div>
-                        </section>
-                        <input type="radio" name="accordion" id="cb4" />
-                        <section class="box">
-                            <label class="box-title" for="cb4"><h3>Payment</h3> <img src="Assets/bx-chevron-up.svg" alt=""></label>
-                            <label class="box-close" for="acc-close"></label>
-                            <div class="box-content">
-                                <h4>
-                                    Payment is made after the sketch is approved<br><br>
-                                    Paymet via PayPal or OVO/DANA (local)
-                                </h4>
-                            </div>
-                        </section>
-                        
-                        <input type="radio" name="accordion" id="acc-close" />
-                </div>
-            </article>
-            <article id="order">
-                <h2>Order and<br>More Information</h2><br><br><br>
-                <h2>Available Soon</h2>
-            </article>
-        </div>
-        </div>
-        
+    <!-- ProgresBar -->
+    <div class="preLoader">
+        <img src="Assets/logo.webp" alt="load" srcset="">
+        <div class="progress" alt="load"></div>
     </div>
+    <!-- Nav -->
+    <nav>
+        <div class="nav">
+            <div class="navBar">
+            <img src="Assets/logo.webp" alt="" srcset="">
+                <div class="hamburger" onclick="openNav()">
+                    <svg class="ham hamRotate ham8" viewBox="0 0 100 100" width="80" onclick="this.classList.toggle('active')" id="ham">
+                        <path
+                            class="line top"
+                            d="m 30,33 h 40 c 3.722839,0 7.5,3.126468 7.5,8.578427 0,5.451959 -2.727029,8.421573 -7.5,8.421573 h -20" />
+                        <path
+                            class="line middle"
+                            d="m 30,50 h 40" />
+                        <path
+                            class="line bottom"
+                            d="m 70,67 h -40 c 0,0 -7.5,-0.802118 -7.5,-8.365747 0,-7.563629 7.5,-8.634253 7.5,-8.634253 h 20" />
+                    </svg>
+                </div>  
+            </div>
+            
+            <div class="right-col" id="rightCol">
+                <ul>
+                    <li><a href="#home" onclick="closeNav()">Home</a></li>
+                    <li><a href="#about" onclick="closeNav()">About</a></li>
+                    <li><a href="#work" onclick="closeNav()">Works</a></li>
+                </ul>
+                <button class="button" onclick="window.location.href='mailto:bagasd811@gmail.com?subject=Testing out mailto!'">
+                    Message
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <section class="home" id="home">
+        <div class="homepage">
+            <p>- Portfolio</p>
+            <h1>Shirro Visual<br><span class="alias">Bagas Dwi Anggoro</span></h1>
+            <div class="cover">
+                <img src="Assets/cover.webp" alt="">
+            </div>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <div class="intro">
+            <h2>let's Introduce Myself</h2>
+            <div class="line"></div>
+            <p>Im <span class="name">Bagas</span> aka <span class="name">Shirro</span>, Im an illustrator, front-end web developer, visual, motion, and graphic designer based in Indonesia.</p>
+        </div>
+    </section>
+    <!-- Gallery -->
+    <section class="gallery" id="work">
+        <h1>Artwork<span class="dot">.</span></h1>
+        <div class="artwork">
+            <div class="galleryImg">
+                <img src="Assets/img1.webp" class="image">
+            </div>
+            <div class="galleryImg">
+                <img src="Assets/img2.webp" class="image">
+            </div>
+            <div class="galleryImg">
+                <iframe
+                src="https://youtube.com/embed/fgIPrA8URz0?loop=1&showinfo=0?wmode=transparent" frameborder="0" wmode="Opaque" title="L2D Animation" allowfullscreen>
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer">
+            <p>© 2023 SHIRRO. All right reserved</p>
+            <div class="link">
+                <i class='bx bxl-facebook-circle' style='color:#ffffff' onClick="parent.location='https://www.facebook.com/bagas.anggoro.942'"></i>
+                <i class='bx bxl-dribbble' style='color:#ffffff' onClick="parent.location='https://www.dribbble.com/Shirr0'"></i>
+                <i class='bx bxl-github' style='color:#ffffff' onClick="parent.location='https://www.github.com/bgshirro'"></i>
+                <i class='bx bxl-twitter' style='color:#ffffff' onClick="parent.location='https://www.twitter.com/@ShirroIro'"></i>
+            </div>
+        </div>
+    </footer>
 </body>
-<script>
-    AOS.init();
-</script>
 </html>
