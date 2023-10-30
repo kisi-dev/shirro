@@ -26,91 +26,234 @@
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="Assets/icon.webp">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 <body>
-    <!-- ProgresBar -->
-    <div class="preLoader">
-        <img src="Assets/logo.webp" alt="load" srcset="">
-        <div class="progress" alt="load"></div>
-    </div>
-    <!-- Nav -->
-    <nav>
-        <div class="nav">
-            <div class="navBar">
+    <section class="y" id="nav">
+        <nav class="nav">
+        <div class="navParent">
             <img src="Assets/logo.webp" alt="" srcset="">
-                <div class="hamburger" onclick="openNav()">
-                    <svg class="ham hamRotate ham8" viewBox="0 0 100 100" width="80" onclick="this.classList.toggle('active')" id="ham">
-                        <path
-                            class="line top"
-                            d="m 30,33 h 40 c 3.722839,0 7.5,3.126468 7.5,8.578427 0,5.451959 -2.727029,8.421573 -7.5,8.421573 h -20" />
-                        <path
-                            class="line middle"
-                            d="m 30,50 h 40" />
-                        <path
-                            class="line bottom"
-                            d="m 70,67 h -40 c 0,0 -7.5,-0.802118 -7.5,-8.365747 0,-7.563629 7.5,-8.634253 7.5,-8.634253 h 20" />
-                    </svg>
-                </div>  
-            </div>
-            
-            <div class="right-col" id="rightCol">
-                <ul>
-                    <li><a href="#home" onclick="closeNav()">Home</a></li>
-                    <li><a href="#about" onclick="closeNav()">About</a></li>
-                    <li><a href="#work" onclick="closeNav()">Works</a></li>
+            <div class="hamburger" onclick="openNav()">
+                <svg class="hb" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 10" stroke="#000" stroke-width=".6" fill="rgba(0,0,0,0)" stroke-linecap="round" style="cursor: pointer">
+                    <path d="M2,3L5,3L8,3M2,5L8,5M2,7L5,7L8,7">
+                        <animate dur="0.2s" attributeName="d" values="M2,3L5,3L8,3M2,5L8,5M2,7L5,7L8,7;M3,3L5,5L7,3M5,5L5,5M3,7L5,5L7,7" fill="freeze" begin="start.begin" />
+                        <animate dur="0.2s" attributeName="d" values="M3,3L5,5L7,3M5,5L5,5M3,7L5,5L7,7;M2,3L5,3L8,3M2,5L8,5M2,7L5,7L8,7" fill="freeze" begin="reverse.begin" />
+                    </path>
+                    <rect width="10" height="10" stroke="none">
+                        <animate dur="2s" id="reverse" attributeName="width" begin="click" />
+                    </rect>
+                    <rect width="10" height="10" stroke="none">
+                        <animate dur="0.001s" id="start" attributeName="width" values="10;0" fill="freeze" begin="click" />
+                        <animate dur="0.001s" attributeName="width" values="0;10" fill="freeze" begin="reverse.begin" />
+                    </rect>
+                </svg>
+            </div>  
+        </div>
+        <div class="navChild" id="navChild">
+            <div class="menu">
+                <ul class="x">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#artwork">Works</a></li>
+                    <li><a href="#comms">Commission</a></li>
+                    <li><a href="#toc">ToC</a></li>
                 </ul>
-                <button class="button" onclick="window.location.href='mailto:bagasd811@gmail.com?subject=Commission Info'">
-                    Message
-                </button>
             </div>
+            <button class="btn" onClick="parent.location='https://www.discord.com/users/AkiraKen#0212'">Message</button>
         </div>
     </nav>
+    </section>
 
-    <section class="home" id="home">
-        <div class="homepage">
-            <p>- Portfolio</p>
-            <h1>Shirro Visual<br><span class="alias">Bagas Dwi Anggoro</span></h1>
-            <div class="cover">
-                <img src="Assets/cover2.webp" alt="">
+    <section id="home">
+        <div class="home">
+            <div class="leftCol">
+                <h1>Shirro Visual<br>portfolio.</h1>
+                <p>Im <span>Bagas</span> aka <span>Shirro</span>, Im an illustrator, front-end web developer, visual, motion, and graphic designer based in Indonesia.</p>
+                <div class="interact">
+                    <button onclick="window.location.href='#about'">Get Started</button>
+                    <div class="aa">
+                        <i class='bx bx-mouse' style='color:#757575'  ></i>
+                        <h3>Scroll down</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="cover" data-aos="fade-up"
+            data-aos-anchor-placement="top-bottom">
+                
             </div>
         </div>
     </section>
 
-    <section class="about" id="about">
-        <div class="intro">
-            <h2>let's Introduce Myself</h2>
-            <div class="line"></div>
-            <p>Im <span class="name">Bagas</span> aka <span class="name">Shirro</span>, Im an illustrator, front-end web developer, visual, motion, and graphic designer based in Indonesia.</p>
+    <section id="about">
+        <div class="about">
+            <ul class="gallery">
+                <li class="ax" ><img src="Assets/1.webp" alt=""></li>
+                <li class="ax" >
+                    <img src="Assets/1-2.png" alt="">
+                    <div class="ay"><h2>Illustrator</h2></div>
+                </li>
+                <li class="ax" ><img src="Assets/2.webp" alt=""></li>
+                <li class="ax" >
+                    <img src="Assets/2-2.png" alt="">
+                    <div class="ay"><h2>Visual Designer</h2></div>
+                </li>
+                <li class="ax" ><img src="Assets/3.webp" alt=""></li>
+                <li class="ax" >
+                    <img src="Assets/3-2.png" alt="">
+                    <div class="ay"><h2>Front-End Web</h2></div>
+                </li>
+                <li class="ax" ><img src="Assets/4.webp" alt=""></li>
+            </ul>
         </div>
     </section>
-    <!-- Gallery -->
-    <section class="gallery" id="work">
-        <h1>Artwork<span class="dot">.</span></h1>
+
+    <section id="artwork">
         <div class="artwork">
-            <div class="galleryImg">
-                <img src="Assets/img1.webp" class="image">
+            <div class="artLeft">
+                <h1>Illustration<br>works<hr></h1>
+                <div class="bb">
+                    <button onClick="parent.location='https://www.pixiv.net/en/users/63285760'">Show All</button>
+                </div>
             </div>
-            <div class="galleryImg">
-                <img src="Assets/img2.webp" class="image">
-            </div>
-            <div class="galleryImg">
-                <iframe
-                src="https://youtube.com/embed/fgIPrA8URz0?loop=1&showinfo=0?wmode=transparent" frameborder="0" wmode="Opaque" title="L2D Animation" allowfullscreen>
-                </iframe>
+            <div class="artRight">
+                <div class="card" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="500">
+                    <div class="cardContent">
+                        <h2>Shirro</h2>
+                        <p>Original Character</p>
+                    </div>
+                </div>
+                <div class="card" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1500">
+                    <div class="cardContent">
+                        <h2>Mostima</h2>
+                        <p>Arknights</p>
+                    </div>
+                </div>
+                <div class="card" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1000">
+                    <div class="cardContent">
+                        <button onClick="parent.location='https://youtube.com/shorts/fgIPrA8URz0?si=NQGRHMtHxKz3tTrB'">Animation <i class='bx bx-chevron-right' ></i></button>
+                        <h2>Muelsyse</h2>
+                        <p>Arknights</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
+    <section id="uix">
+        <div class="uix">
+            <div class="uixParent">
+                <h1>UIX Design<br>works<hr></h1>
+            </div>
+            <div class="uixChild">
+                <div class="firstItem">
+                    <div class="item" data-aos="fade-left" data-aos-duration="500">
+                        <img src="https://cdn.dribbble.com/userupload/8917804/file/original-558a273f7e3901acea49caab5d2375e2.png?crop=0x0-1600x1200" alt="" srcset="">
+                    </div>
+                </div>
+                <div class="secondItem">
+                    <div class="item" data-aos="fade-left" data-aos-duration="800">
+                        <img src="https://cdn.dribbble.com/userupload/6882449/file/original-25628cea92ab0ee62856a4af3f8a7bde.png" alt="" srcset="">
+                    </div>
+                    <div class="item" data-aos="fade-left" data-aos-duration="1000">
+                        <img src="https://cdn.dribbble.com/userupload/6882385/file/original-1eb600b9cd162e3e13634234253fedd4.png" alt="" srcset="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="comms">
+        <div class="comms">
+            <div class="sample" id="sample">
+                <img src="Assets/Sample.webp" alt="" srcset="">
+                <div class="mask" id="mask"></div>
+            </div>
+            <div class="price">
+                <h1>Commission<br>pricelist<hr class="ca"></h1>
+                <form>
+                    <div class="cb" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="500">
+                        <input type="radio" name="ta" checked id="one">
+                        <label for="one" onclick="da(), window.location.href='#sample'">
+                            <p>Bust Up</p>
+                            <p>100k IDR/30 USD</p>
+                        </label>
+                    </div>
+                    <div class="cb" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1000">
+                        <input type="radio" name="ta" id="two">
+                        <label for="two" onclick="db(), window.location.href='#sample'">
+                            <p>Knee Up</p>
+                            <p>150k IDR/45 USD</p>
+                        </label>
+                    </div>
+                    <div class="cb" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1400">
+                        <input type="radio" name="ta" id="three">
+                        <label for="three" onclick="dc(), window.location.href='#sample'">
+                            <p>Full Body</p>
+                            <p>200k IDR/60 USD</p>
+                        </label>
+                    </div>
+                    <div class="check" onclick="bg()" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1700">
+                        <label for="" class="da">
+                            <div class="db">
+                                <input type="checkbox" onclick="ea(), window.location.href='#sample'" id="eax">
+                                <p>Background</p>
+                            </div>
+                            <p>+75k IDR/25 USD</p>
+                        </label>
+                    </div>
+                    <div class="check" data-aos="fade-up" data-aos-anchor-placement="top-bottom" data-aos-duration="1900">
+                        <label for="" class="da">
+                            <div class="db">
+                                <input type="checkbox" onclick="eb(), window.location.href='#sample'">
+                                <p>Animation</p>
+                            </div>
+                            <p>2x Total price</p>
+                        </label>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section id="toc">
+        <div class="toc">
+            <div class="tocParent">
+                <h1>Terms of<br>condition<hr class="ea"></h1>
+            </div>
+            <div class="tocChild">
+                <div class="ee">
+                    <p>Estimated processing time is about 1-2 weeks according to the queue.</p>
+                    <p>Does not accept nsfw, furry, mecha, gore, chibi, old character.</p>
+                    <p>Receive only minor revisions after the sketch is approved and enter the render stage.</p>
+                </div>
+                <div class="ee">
+                    <p>Send references in the form of poses, expressions, and character details.</p>
+                    <p style="padding-bottom: 0 !important;">The above price is a personal use license, please do not sell or take any profit from the artwork without the use of a commercial license, please DM first to get your commercial license.</p>
+                </div>
+                <div class="ee">
+                    <p>payment is made in advance with a minimum of 50% of the total price after the sketch is approved.</p>
+                    <p>Paymeny via Gopay, OVO, Dana, Paypal.</p>
+                    <p>Order via <a href="https://www.discord.com/users/AkiraKen#0212" class="ef">Discord</a>, <a href="https://www.m.me/bagas.anggoro.942" class="ef">Messenger</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
     <footer>
         <div class="footer">
             <p>© 2023 SHIRRO. All right reserved</p>
             <div class="link">
-                <i class='bx bxl-facebook-circle' style='color:#ffffff' onClick="parent.location='https://www.facebook.com/bagas.anggoro.942'"></i>
-                <i class='bx bxl-dribbble' style='color:#ffffff' onClick="parent.location='https://www.dribbble.com/Shirr0'"></i>
-                <i class='bx bxl-github' style='color:#ffffff' onClick="parent.location='https://www.github.com/bgshirro'"></i>
-                <i class='bx bxl-twitter' style='color:#ffffff' onClick="parent.location='https://www.twitter.com/@ShirroIro'"></i>
+                <i class='bx bxl-facebook-circle' style='color:#000000' onClick="parent.location='https://www.facebook.com/bagas.anggoro.942'"></i>
+                <i class='bx bxl-twitter' style='color:#000000' onClick="parent.location='https://www.twitter.com/@ShirroIro'"></i>
+                <i class='bx bxl-discord-alt' onClick="parent.location='https://www.discord.com/users/AkiraKen#0212'"></i>
+                <i class='bx bxl-dribbble' style='color:#000000' onClick="parent.location='https://www.dribbble.com/Shirr0'"></i>
+                <i class='bx bxl-github' style='color:#000000' onClick="parent.location='https://www.github.com/bgshirro'"></i>
             </div>
         </div>
     </footer>
 </body>
+    <script>
+        AOS.init();
+        window.sr = ScrollReveal({ reset: true });
+    </script>
 </html>
