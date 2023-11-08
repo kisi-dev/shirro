@@ -1,6 +1,7 @@
 <img src="Assets/yolo.svg" alt="" srcset="">
-# Welcome
-This is a personal website that contains some artwork.
+
+#Hello and Welcome
+This is a personal website that contains some artwork and UIX Design.
 This website is still under development, stay tuned for the full version.
 
->Build with **html**, **css** and **javascript**.
+>Build with pure **html**, **css** and **javascript**.
