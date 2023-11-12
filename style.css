@@ -584,7 +584,7 @@ label p{
     .card {
         width: 100%;
         height: auto;
-        aspect-ratio: 3/4;
+        aspect-ratio: 1/1.41;
         margin: 0;
     }
     .comms {
