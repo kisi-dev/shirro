@@ -474,7 +474,7 @@ label p{
         justify-content: space-between;
     }
     .artRight {
-        margin-top: 80px 0 0 0;
+        margin: 80px 0 0 0;
     }
     .uixChild {
         flex-direction: column;
