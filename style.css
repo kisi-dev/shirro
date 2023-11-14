@@ -410,7 +410,7 @@ label p{
     justify-content: space-between;
 }
 .link i {
-    padding: 0 0 0 12px;
+    gap: 12px;
     cursor: pointer;
 }
 
@@ -474,7 +474,7 @@ label p{
         justify-content: space-between;
     }
     .artRight {
-        margin-top: 80px;
+        margin-top: 80px 0 0 0;
     }
     .uixChild {
         flex-direction: column;
