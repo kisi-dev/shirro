@@ -410,6 +410,8 @@ label p{
     justify-content: space-between;
 }
 .link i {
+    display: flex;
+    padding: 0 !important;
     gap: 12px;
     cursor: pointer;
 }
