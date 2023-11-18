@@ -409,10 +409,11 @@ label p{
     align-items: center;
     justify-content: space-between;
 }
+.link {
+    margin: 0 0 0 -12px;
+}
 .link i {
-    display: flex;
-    padding: 0 !important;
-    gap: 12px;
+    padding: 0 0 0 12px;
     cursor: pointer;
 }
 
