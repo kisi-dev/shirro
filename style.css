@@ -155,17 +155,19 @@ i {
     background-image: url('Assets/cover1.webp');
     box-shadow: 0px 8px 50px rgba(29, 29, 37, 0.1);
     
-    animation: mymove 30s;
+    animation: mymove 45s;
     animation-delay: 5s;
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
     -webkit-animation-timing-function: ease-in-out;
 }
 @keyframes mymove {
-    5% { background-image: url('Assets/cover1.webp'); }
-    45% { background-image: url('Assets/cover1.webp'); }
-    55% { background-image: url('Assets/cover2.webp'); }
-    95% { background-image: url('Assets/cover2.webp'); }
+    0% { background-image: url('Assets/cover1.webp'); }
+    30% { background-image: url('Assets/cover1.webp'); }
+    33% { background-image: url('Assets/cover2.webp'); }
+    63% { background-image: url('Assets/cover2.webp'); }
+    66% { background-image: url('Assets/cover3.webp'); }
+    99% { background-image: url('Assets/cover3.webp'); }
 }
 .about {
     padding-top: 5px;
